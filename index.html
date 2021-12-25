@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <link rel='icon' type='image/svg+xml' href="./assets/favicon.b8ca4b2b.svg" />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Poly Animals</title>
+  <script type="module" crossorigin src="./assets/index.2c90e739.js"></script>
+  <link rel="stylesheet" href="./assets/index.1b93f8c2.css">
+</head>
+
+<body>
+<div>
+  <div class='save-load-btns'>
+    <button id='save-to-local'>save to local</button>
+    <button id='load-from-local'>load from local</button>
+    <button id='save-to-file'>save to file</button>
+    <button id='load-from-file'>load from file
+      <input id='upload-file' type='file' accept='.codeing101' style='display:none;' />
+    </button>
+    <button id='win-data'>win-data</button>
+    <button id='load-nearly-win'>load-nearly-win</button>
+    <button><a href="./html/svgConvert.html" target="_blank">svg convertor</a></button>
+    <input type="file" id="file" multiple="multiple">
+    <span>(仅在开发测试环境中使用)</span>
+  </div>
+  <main>
+    <nav>
+      <span>Poly</span>
+      <span>Animals</span>
+    </nav>
+    <div class='container'>
+      <div class='control-bar'>
+        <div>
+          <button class='btn first-game'>1</button>
+          <button class='btn second-game'>2</button>
+          <button class='btn third-game'>3</button>
+        </div>
+        <div class='top-right'>
+          <button class='btn hint'>Hints</button>
+          <button class='btn save'>Save</button>
+        </div>
+      </div>
+      <canvas id='canvas' width='1100' height='648'>
+        Your browser does not support the HTML5 canvas tag.
+      </canvas>
+      <button class='start-game-btn'>Start</button>
+      <div class='finish-tips hidden'>
+        <p class='play-time'></p>
+      </div>
+
+      <div class='alert-one hidden'>
+        <button class='alert-btn'></button>
+      </div>
+      <div class='alert-two hidden'>
+        <p class='alert-text'></p>
+        <button class='confirm-button'>确定</button>
+      </div>
+      <div class='alert-three hidden'>
+        <p class='alert-text'></p>
+        <button class='load-button btn btn-small btn-select'>加载</button>
+        <button class='delete-button btn btn-small'>删除</button>
+        <button class='cancel-button btn btn-small'>取消</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <img class='logo' src="./assets/logo.2d3934df.svg" alt='logo'>
+    <p>Designed and developed by Coding 101</p>
+    <p>Non-commercial use. Pictures are from GoGoDesignStudio</p>
+  </footer>
+</div>
+
+<div class='modal hidden'>
+  <div class='modal-container'>
+    <button class='cancel-hint-btn'>X</button>
+    <img class='hint-img' src="./assets/deer.326ae6d2.svg">
+  </div>
+</div>
+
+</body>
+
+</html>
